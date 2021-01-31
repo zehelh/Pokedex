@@ -1,4 +1,9 @@
 .pokemon {
 	width: 16em;
-	justify-self: center;
+    justify-self: center;
+}
+
+img {
+    width: 6em;
+    height: 6em;
 }

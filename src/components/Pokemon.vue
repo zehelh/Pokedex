@@ -1,6 +1,6 @@
 <template>
   <div class="pokemon">
-    <img :src='getImgUrl(pokemon.id)' v-bind:alt='pokemon.name' />
+    <img :src='getImgUrl(pokemon.id)' v-bind:alt='pokemon.name' width="100" height="100"/>
     <p>[{{pokemon.id}}] {{pokemon.name}}</p>
   </div>
 </template>
