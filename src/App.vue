@@ -1,28 +1,33 @@
 <template>
   <div id="app">
-    <img alt="Vue logo" src="./assets/logo.png">
-    <HelloWorld msg="Welcome to Your Vue.js App"/>
+    <Pokemons :pokemons="[
+    {id: '1', name: 'Bulbizarre'},
+    {id: '2', name: 'Herbizarre'},
+    {id: '3', name: 'Florizarre'},
+    {id: '4', name: 'Salamèche'},
+    {id: '5', name: 'Reptincel'},
+    {id: '6', name: 'Dracaufeu'},
+    {id: '7', name: 'Carapuce'},
+    {id: '8', name: 'Carabaffe'},
+    {id: '9', name: 'Tortank'},
+    {id: '10', name: 'Chenipan'},
+    {id: '11', name: 'Chrysacier'},
+    {id: '12', name: 'Papilusion'},
+    ]"/>
   </div>
 </template>
 
 <script>
-import HelloWorld from './components/HelloWorld.vue'
+import Pokemons from './components/Pokemons.vue'
 
 export default {
   name: 'App',
   components: {
-    HelloWorld
+    Pokemons
   }
 }
 </script>
 
 <style>
-#app {
-  font-family: Avenir, Helvetica, Arial, sans-serif;
-  -webkit-font-smoothing: antialiased;
-  -moz-osx-font-smoothing: grayscale;
-  text-align: center;
-  color: #2c3e50;
-  margin-top: 60px;
-}
+  @import './app.css';
 </style>
