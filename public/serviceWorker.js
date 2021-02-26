@@ -5,8 +5,10 @@ self.addEventListener('install', e => {
       .then(cache => {
           return cache.addAll([
               '/',
-              './serviceWorker.js',
-              './index.html'
+              '/serviceWorker.js',
+              '/manifest.json',
+              '/pokedex.png',
+              '/index.html'
           ])
           .then(() =>self.skipWaiting())
       })
